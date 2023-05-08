@@ -8,29 +8,44 @@
         <h2>Grow your powerbase and ultimately take over the universe... with cats!</h2>
 		<br />
 		<div class="flex-container-currencies">
-            <div>Cats<br /><span id="cats">0</span></div>
+            <div>Biscuits<br /><span id="biscuits">0</span></div>
+			<div>Cats<br /><span id="cats">0</span></div>
             <div>Gold<br /><span id="gold">0</span></div>
         </div>
-		<button onclick="buyBiscuitMachine()">Buy Biscuit Machine</button>
-		<br />
-		Biscuit Machine Cost: <span id="biscuitMachineCost">10</span> Gold
-		
-        <div class="flex-container">
-            <div>Biscuits:<br /><span id="biscuits">0</span></div>
-            <div onclick="biscuitClick(1)">Make Biscuits</div>
-        </div>
-		<div class="flex-container-sub">
-            <div onclick="sellBiscuits(1)">Sell 1% of your Biscuit<br /> ( <span id="1pcBiscuits">0</span> ) </div>
-            <div onclick="sellBiscuits(10)">Sell 10% of your Biscuits<br /> ( <span id="10pcBiscuits">0</span> ) </div>
-            <div onclick="sellBiscuits(50)">Sell 50% of your Biscuits<br /> ( <span id="50pcBiscuits">0</span> ) </div>
-			<div onclick="sellBiscuits(100)">Sell ALL Biscuits<br /> ( <span id="allBiscuits">0</span>)</div>
-        </div>
-		<br />
-		<div class="flex-container">
-            <div>Biscuit Machines:<br /><span id="biscuitMachines">0</span></div>
-            <div>There is now a regular supply of <br /><span id="machineProd">0</span></div>
-        </div>
-
+		<div class="flex-container-nav" id="navButtons">
+			<div onclick="tab('biscuitMenu')">Biscuits</div>
+			<div onclick="tab('machinesMenu')">Machines</div>
+			<div onclick="tab('optionsMenu')">Options</div>
+		</div>
+		<br />		
+        <div id="biscuitMenu">
+			<div class="flex-container-biscuits">
+            	<div onclick="biscuitClick()">Make Biscuits</div>
+        	</div>
+			<div class="flex-container-biscuits-sub">
+            	<div onclick="sellBiscuits(1)">Sell 1% of your Biscuit<br /> ( <span id="1pcBiscuits">0</span> ) </div>
+            	<div onclick="sellBiscuits(10)">Sell 10% of your Biscuits<br /> ( <span id="10pcBiscuits">0</span> ) </div>
+            	<div onclick="sellBiscuits(50)">Sell 50% of your Biscuits<br /> ( <span id="50pcBiscuits">0</span> ) </div>
+				<div onclick="sellBiscuits(100)">Sell ALL Biscuits<br /> ( <span id="allBiscuits">0</span>)</div>
+        	</div>
+		</div>
+		<div id="machinesMenu">
+			<div class="flex-container-machines">
+            	<div>Biscuit Machines:<br /><span id="biscuitMachines">0</span></div>
+            	<div>There is now a regular supply of <br /><span id="machineProd">0</span></div>
+        	</div>
+			<div class="flex-container-machines-sub">
+				<div onclick="(buyBiscuitMachines(1))">Buy 1 Biscuit Machine<br /> ( <span id="mc1">0</span> Gold) </div>
+				<div onclick="(buyBiscuitMachines(10))">Buy 10 Biscuit Machines<br /> ( <span id="mc10">0</span> Gold) </div>
+				<div onclick="(buyBiscuitMachines(50))">Buy 50 Biscuit Machines<br /> ( <span id="mc50">0</span> Gold) </div>
+				<div onclick="(buyBiscuitMachines(100))">Buy 100 Biscuit Machines<br /> ( <span id="mc100">0</span> Gold) </div>
+			</div>
+		</div>
+		<div id="optionsMenu">
+			<button onclick="(saveGame())">Save</button>
+			<button onclick="(loadGame())">Load</button>
+			<button>Option 3</button>
+		</div>
         <script type="text/javascript" src="main.js"></script>
 	</body>
 </html>

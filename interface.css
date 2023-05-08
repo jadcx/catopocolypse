@@ -24,31 +24,7 @@ body {
     background-color: goldenrod;
   }
   
-  .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: darkblue;
-  }
-
-  .flex-container-sub {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: mediumblue;
-  }
-
-  .flex-container > div {
-    background-image: url(assets/white_wall_hash.png);
-    background-repeat: repeat;
-    width: 150px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-  }
-
-  .flex-container-sub > div {
+  .flex-container-currencies > div {
     background-image: url(assets/white_wall_hash.png);
     background-repeat: repeat;
     width: 150px;
@@ -58,7 +34,80 @@ body {
     font-size: 20px;
   }
 
-  .flex-container-currencies > div {
+  .flex-container-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: gray;
+  }
+  
+  .flex-container-nav > div {
+    background-image: url(assets/white_wall_hash.png);
+    background-repeat: repeat;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .flex-container-biscuits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: darkblue;
+  }
+
+  .flex-container-biscuits > div {
+    background-image: url(assets/white_wall_hash.png);
+    background-repeat: repeat;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+  
+  .flex-container-biscuits-sub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: mediumblue;
+  }
+  .flex-container-biscuits-sub > div {
+    background-image: url(assets/white_wall_hash.png);
+    background-repeat: repeat;
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .flex-container-machines {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: darkblue;
+  }
+
+  .flex-container-machines > div {
+    background-image: url(assets/white_wall_hash.png);
+    background-repeat: repeat;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 30px;
+  }
+  
+  .flex-container-machines-sub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: mediumblue;
+  }
+  .flex-container-machines-sub > div {
     background-image: url(assets/white_wall_hash.png);
     background-repeat: repeat;
     width: 150px;
