@@ -3,15 +3,34 @@
 		<link rel="stylesheet" type="text/css" href="interface.css" />
 	</head>
 	<body>
-		<button onclick="cookieClick(1)">Click Me!</button>
+		<title>Catopocolypse</title>
+        <h1>Catopocolypse</h1>
+        <h2>Grow your powerbase and ultimately take over the universe... with cats!</h2>
 		<br />
-		Cookies: <span id="cookies">0</span>
+		<div class="flex-container-currencies">
+            <div>Cats<br /><span id="cats">0</span></div>
+            <div>Gold<br /><span id="gold">0</span></div>
+        </div>
+		<button onclick="buyBiscuitMachine()">Buy Biscuit Machine</button>
 		<br />
-		<button onclick="buyCursor()">Buy Cursor</button>
+		Biscuit Machine Cost: <span id="biscuitMachineCost">10</span> Gold
+		
+        <div class="flex-container">
+            <div>Biscuits:<br /><span id="biscuits">0</span></div>
+            <div onclick="biscuitClick(1)">Make Biscuits</div>
+        </div>
+		<div class="flex-container-sub">
+            <div onclick="sellBiscuits(1)">Sell 1% of your Biscuit<br /> ( <span id="1pcBiscuits">0</span> ) </div>
+            <div onclick="sellBiscuits(10)">Sell 10% of your Biscuits<br /> ( <span id="10pcBiscuits">0</span> ) </div>
+            <div onclick="sellBiscuits(50)">Sell 50% of your Biscuits<br /> ( <span id="50pcBiscuits">0</span> ) </div>
+			<div onclick="sellBiscuits(100)">Sell ALL Biscuits<br /> ( <span id="allBiscuits">0</span>)</div>
+        </div>
 		<br />
-		Cursors: <span id="cursors">0</span>
-		<br />
-		Cursor Cost: <span id="cursorCost">10</span>
-		<script type="text/javascript" src="main.js"></script>
+		<div class="flex-container">
+            <div>Biscuit Machines:<br /><span id="biscuitMachines">0</span></div>
+            <div>There is now a regular supply of <br /><span id="machineProd">0</span></div>
+        </div>
+
+        <script type="text/javascript" src="main.js"></script>
 	</body>
 </html>
